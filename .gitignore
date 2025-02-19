@@ -36,4 +36,5 @@ build
 .vscode
 .eslintcache
 .unimportedrc.json
+.firebase
 tsconfig.tsbuildinfo

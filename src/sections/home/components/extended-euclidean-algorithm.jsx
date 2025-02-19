@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import ListItem from '@mui/material/ListItem';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import ListItemText from '@mui/material/ListItemText';
 
 /**
  * ExtendedEuclideanAlgorithm Component
@@ -63,23 +64,6 @@ export const ExtendedEuclideanAlgorithm = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div>
-      <h2>Extended Euclidean Algorithm</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="foo">
-          Enter a:
-          <input type="number" value={a} onChange={(e) => setA(e.target.value)} required />
-        </label>
-        <br />
-        <label htmlFor="foo">
-          Enter b:
-          <input type="number" value={b} onChange={(e) => setB(e.target.value)} required />
-        </label>
-        <br />
-        <button type="submit">Compute</button>
-      </form>
-=======
     <Stack>
       <Typography variant="h2">Extended Euclidean Algorithm</Typography>
       <Box
@@ -106,7 +90,6 @@ export const ExtendedEuclideanAlgorithm = () => {
           Compute 
         </Button>
       </Box>
->>>>>>> upstream/feature/assignment6
       
       {result && (
         <Box>

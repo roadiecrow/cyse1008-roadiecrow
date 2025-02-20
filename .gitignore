@@ -15,6 +15,7 @@ coverage
 
 # production
 .next
+.firebase
 .swc
 _static
 out
@@ -27,6 +28,8 @@ build
 .env.development.local
 .env.test.local
 .env.production.local
+*.yaml
+keys
 
 # misc
 .DS_Store
@@ -35,4 +38,6 @@ build
 .vscode
 .eslintcache
 .unimportedrc.json
+.firebase
 tsconfig.tsbuildinfo
+setAdmin.js

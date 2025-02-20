@@ -1,8 +1,4 @@
 {
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "y"
-  },
   "hosting": {
     "source": ".",
     "ignore": [
@@ -13,25 +9,5 @@
     "frameworksBackend": {
       "region": "us-central1"
     }
-  },
-  "functions": [
-    {
-      "runtime": "nodejs18",
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log",
-        "*.local"
-      ],
-      "predeploy": [
-        "npm run lint || exit 0"
-      ]
-    }
-  ],
-  "storage": {
-    "rules": "storage.rules"
   }
 }

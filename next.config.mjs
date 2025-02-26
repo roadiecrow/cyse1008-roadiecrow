@@ -24,9 +24,10 @@ const nextConfig = {
 
     return config;
   },
-  ...(isStaticExport === 'true' && {
-    output: 'export',
-  }),
+  experimental: {
+    outputStandalone: true, // Ensure correct structure for Vercel
+  },
+  output: 'standalone', // Ensures a proper `.next` directory
 };
 
 export default nextConfig;
